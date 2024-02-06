@@ -15,7 +15,7 @@ function Header() {
     <nav className="w-full sticky top-0 z-[1000] p-2 bg-stone-950">
       <div className="w-11/12 mx-auto flex items-center justify-between p-2 border-b-[0.5px] border-b-[#afa18f]">
         <div className="font-medium">
-          <Link href="">
+          <Link href="#intro">
             <motion.p
               whileHover={{
                 scale: 0.7,
@@ -46,7 +46,7 @@ function Header() {
             ))}
           </ul>
         </div>
-        <div className="flex md:hidden">
+        <div className="text-white flex md:hidden">
           <button
             onClick={toggleButton}
             className="h-7 w-24 flex items-center justify-center gap-1 border-2 border-white p-1 rounded-full"

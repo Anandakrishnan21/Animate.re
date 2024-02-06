@@ -1,9 +1,23 @@
 "use client";
-import { useEffect} from "react";
+import { useEffect, useState } from "react";
 import IntroSection from "@/components/sections/IntroSection";
 import Header from "@/components/Header";
+import TextSection from "@/components/sections/TextSection";
+import ZoomSection from "@/components/sections/ZoomSection";
+import HorizontalScroll from "@/components/sections/HorizontalScroll";
+import EndSection from "@/components/sections/EndSection";
+import Footer from "@/components/Footer";
+import Loader from "./Loader";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timeout);
+  });
 
   useEffect(() => {
     (async () => {
@@ -13,11 +27,20 @@ export default function Home() {
   }, []);
 
   return (
-    <main
-      className="flex flex-col items-center bg-stone-950"
-    >
+    <main className="flex flex-col items-center bg-stone-950">
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
           <Header />
           <IntroSection />
+          <TextSection />
+          <ZoomSection />
+          <HorizontalScroll />
+          <EndSection />
+          <Footer />
+        </>
+      )}
     </main>
-  ); 
+  );
 }

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/runtime": "^1.0.48",
     "locomotive-scroll": "^5.0.0-beta.11",
     "next": "14.1.0",
     "react": "^18",
