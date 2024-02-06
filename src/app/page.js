@@ -13,17 +13,17 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-    return () => clearTimeout(timeout);
-  });
-
-  useEffect(() => {
-    (async () => {
+    const initializeScroll = async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const locomotiveScroll = new LocomotiveScroll();
-    })();
+    };
+
+    const timeout = setTimeout(() => {
+      setLoading(false);
+      initializeScroll();
+    }, 3000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

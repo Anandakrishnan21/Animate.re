@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 function StaggeredText({ text }) {
   const element = useRef(null);
   const textArray = Array.isArray(text) ? text : [text];
-  const useView = useInView(element, { amount: 0.5 });
+  const useView = useInView(element, { amount: 0.5, once: true });
   const defaultAnimations = {
     hidden: {
       opacity: 0,

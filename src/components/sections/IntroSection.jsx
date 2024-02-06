@@ -18,7 +18,7 @@ function IntroSection() {
         <div
           className="w-[300px] md:w-[350px] h-[475px] absolute will-change-transform"
           data-scroll
-          data-scroll-speed="3"
+          data-scroll-speed="0.3"
         >
           <Image
             src="/img/image2.jpg"
@@ -30,10 +30,10 @@ function IntroSection() {
         </div>
         <h1
           data-scroll
-          data-scroll-speed="7"
+          data-scroll-speed="0.7"
           className="text-white z-[3] text-center text-base md:text-3xl lg:text-5xl whitespace-nowrap"
         >
-          LET'S DIVE INTO WORLD OF ANIMATION
+          LET&apos;S DIVE INTO WORLD OF ANIMATION
         </h1>
       </div>
     </div>
