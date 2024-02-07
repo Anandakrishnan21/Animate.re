@@ -15,7 +15,7 @@ function IntroSection() {
       </div>
       <div className="flex justify-center items-center relative ">
         <div
-          className="w-[300px] md:w-[350px] h-[475px] absolute will-change-transform"
+          className="w-[280px] md:w-[350px] h-[475px] absolute will-change-transform"
           data-scroll
           data-scroll-speed="0.3"
         >
