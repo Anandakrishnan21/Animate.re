@@ -45,7 +45,7 @@ function ZoomSection() {
               return (
                 <motion.div key={index} style={{ scale }} className="element">
                   <div className="imageContainer">
-                    <img src={src} alt={`image${index}`} />
+                    <img src={src} alt={`image${index}`}/>
                   </div>
                 </motion.div>
               );
