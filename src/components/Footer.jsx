@@ -7,7 +7,7 @@ function Footer() {
     <div className="w-full md:h-72 flex flex-col justify-center items-center bg-[#fffce1] text-stone-950 p-4">
       <div className="w-11/12 flex flex-col md:flex-row items-center justify-between gap-4 p-4 rounded-md">
         <p className="text-3xl md:text-5xl text-center font-bold">
-          Thank you for checking Animate.re
+          Thank you for visiting Animate.re
         </p>
         <div className="flex gap-8">
           <div>
