@@ -15,7 +15,10 @@ export default function Home() {
   useEffect(() => {
     const initializeScroll = async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const locomotiveScroll = new LocomotiveScroll({
+        smooth: true,
+        smoothMobile: true,
+      });
     };
 
     const timeout = setTimeout(() => {
@@ -27,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center bg-stone-950">
+    <main className="scroll-smooth flex flex-col items-center bg-stone-950">
       {loading ? (
         <Loader />
       ) : (
