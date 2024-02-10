@@ -15,23 +15,23 @@ function ZoomSection() {
 
   const images = [
     {
-      src: "img/image3.jpg",
+      src: "/img/image3.jpg",
       scale: scale1,
     },
     {
-      src: "img/image4.jpg",
+      src: "/img/image4.jpg",
       scale: scale2,
     },
     {
-      src: "img/image5.jpg",
+      src: "/img/image5.jpg",
       scale: scale1,
     },
     {
-      src: "img/image6.jpg",
+      src: "/img/image6.jpg",
       scale: scale3,
     },
     {
-      src: "img/image7.jpg",
+      src: "/img/image7.jpg",
       scale: scale4,
     },
   ];
@@ -45,7 +45,7 @@ function ZoomSection() {
               return (
                 <motion.div key={index} style={{ scale }} className="element">
                   <div className="imageContainer">
-                    <img src={src} alt={`image${index}`}/>
+                    <img src={src} alt={`image${index}`} />
                   </div>
                 </motion.div>
               );
