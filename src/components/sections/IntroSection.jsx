@@ -10,6 +10,7 @@ function IntroSection() {
           src="/img/image1.jpg"
           alt="backgroundImg"
           fill="true"
+          priority="true"
           className="object-cover"
         />
       </div>

@@ -8,6 +8,7 @@ import HorizontalScroll from "@/components/sections/HorizontalScroll";
 import EndSection from "@/components/sections/EndSection";
 import Footer from "@/components/Footer";
 import Loader from "./Loader";
+import ScrollSection from "@/components/sections/ScrollSection";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -15,16 +16,15 @@ export default function Home() {
   useEffect(() => {
     const initializeScroll = async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll({
-        smooth: true,
-        smoothMobile: true,
-      });
+      const locomotiveScroll = new LocomotiveScroll();
     };
+
+    // initializeScroll();
 
     const timeout = setTimeout(() => {
       setLoading(false);
       initializeScroll();
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -39,6 +39,7 @@ export default function Home() {
           <IntroSection />
           <TextSection />
           <ZoomSection />
+          <ScrollSection />
           <HorizontalScroll />
           <EndSection />
           <Footer />

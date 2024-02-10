@@ -11,14 +11,14 @@ function HorizontalScroll() {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"], {
     ease: easeInOut,
   });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
 
   return (
     <div
       ref={element}
-      id="scroll"
-      className="w-full relative h-[250vh] flex justify-center brightness-80 p-4"
+      className="w-full relative h-[200vh] flex justify-center brightness-80 p-4"
     >
-      <div className="w-11/12 h-screen top-32 flex sticky p-4 rounded-xl overflow-hidden">
+      <div className="w-11/12 h-screen top-32 flex items-center sticky p-4 rounded-xl overflow-hidden">
         <motion.div
           style={{ x, y: 0 }}
           transition={{ duration: 2 }}
@@ -27,19 +27,17 @@ function HorizontalScroll() {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="group relative h-[400px] w-[300px] md:w-[350px] overflow-hidden bg-white"
+              className="group relative h-[350px] w-[300px] md:w-[300px] overflow-hidden rounded-[1vw]"
             >
               <motion.img
-                whileHover={{
-                  scale: 0.98,
-                }}
+                style={{ scale: scale }}
                 transition={{
                   duration: 0.5,
                 }}
                 src={card.src}
                 alt="Img"
                 fill="true"
-                className="h-full object-cover object-top p-2"
+                className="h-full object-cover object-top"
               />
             </div>
           ))}

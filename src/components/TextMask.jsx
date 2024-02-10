@@ -30,7 +30,7 @@ function TextMask() {
   return (
     <div className="relative">
       <motion.div
-        className="mask"
+        className="mask rounded-lg"
         animate={{
           WebkitMaskPosition: `${x - containerOffset.x - size / 2}px ${
             y - containerOffset.y - size / 2
@@ -54,7 +54,7 @@ function TextMask() {
           aquatic organisms to live and grow under water
         </p>
       </motion.div>
-      <div className="content">
+      <div className="content rounded-lg">
         <p className=" text-justify">
           Water also contains dissolved oxygen and other gases from the air,
           dissolved minerals from the Earth and organic matter. Gases, minerals

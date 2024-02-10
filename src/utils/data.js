@@ -47,7 +47,7 @@ export const Links = [
   },
   {
     id: 3,
-    name: "H-scroll",
+    name: "Scroll",
     href: "#scroll",
   },
   {
