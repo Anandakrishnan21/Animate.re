@@ -60,27 +60,27 @@ export const Links = [
 export const cards = [
   {
     id: 1,
-    src: "/img/img1.jpg",
+    src: "/img/img1.webp",
   },
   {
     id: 2,
-    src: "/img/img2.jpg",
+    src: "/img/img2.jpeg",
   },
   {
     id: 3,
-    src: "/img/img3.jpg",
+    src: "/img/img3.webp",
   },
   {
     id: 4,
-    src: "/img/img4.jpg",
+    src: "/img/img4.jpeg",
   },
   {
     id: 5,
-    src: "/img/img5.jpg",
+    src: "/img/img5.jpeg",
   },
   {
     id: 6,
-    src: "/img/img6.jpg",
+    src: "/img/img6.jpeg",
   },
   {
     id: 7,

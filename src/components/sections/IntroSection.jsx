@@ -7,7 +7,7 @@ function IntroSection() {
     <div id="intro" className="relative w-full h-screen flex justify-center">
       <div className="w-10/12 h-full absolute brightness-70">
         <Image
-          src="/img/image1.jpg"
+          src="/img/image1.webp"
           alt="backgroundImg"
           fill="true"
           priority="true"

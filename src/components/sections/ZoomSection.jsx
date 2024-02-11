@@ -15,23 +15,23 @@ function ZoomSection() {
 
   const images = [
     {
-      src: "/img/image3.jpg",
+      src: "/img/image3.jpeg",
       scale: scale1,
     },
     {
-      src: "/img/image4.jpg",
+      src: "/img/image4.jpeg",
       scale: scale2,
     },
     {
-      src: "/img/image5.jpg",
+      src: "/img/image5.jpeg",
       scale: scale1,
     },
     {
-      src: "/img/image6.jpg",
+      src: "/img/image6.jpeg",
       scale: scale3,
     },
     {
-      src: "/img/image7.jpg",
+      src: "/img/image7.jpeg",
       scale: scale4,
     },
   ];
